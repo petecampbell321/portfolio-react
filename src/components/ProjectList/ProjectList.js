@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Project from '../Project/Project';
 import projData from '../../util/projData';
 
+import './ProjectList.css';
+
 class ProjectList extends Component {
 	render() {
 		const list = projData.map(projectData => (
@@ -14,9 +16,11 @@ class ProjectList extends Component {
 		));
 
 		return(
-			<div>
-				<h1>My Projects</h1>
-				{list}
+			<div className="container">
+				<h1 className="section-title">My Projects</h1>
+				<div className="list-container">
+					{list}
+				</div>
 			</div>
 		)
 	}
