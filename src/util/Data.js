@@ -9,14 +9,14 @@ class Data {
     }
 }
 
-let harronfr = new Data(1, "Harron Framing", ["Website Design", "Advertisement Design"], "This is a description of a project");
+export default Data;
 
-let array = [];
-for(i = 0; i < 6; i++) {
-    let id = i + 1;
-    let temp = new Data(id, "Test: " + id, ["type1", "type2"], "A test description for project " + id);
-    array.push(temp);
-}
 
-console.log(harronfr.id + ': ' + harronfr.name);
-console.log(array[3]);
+// let array = [];
+// for(i = 0; i < 6; i++) {
+//     let id = i + 1;
+//     let temp = new Data(id, "Test: " + id, ["type1", "type2"], "A test description for project " + id);
+//     array.push(temp);
+// }
+
+// console.log(array[3]);
