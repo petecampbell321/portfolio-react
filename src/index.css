@@ -6,6 +6,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-family: europa, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  
+  color: #3E3E3E;
 }
 
 code {
