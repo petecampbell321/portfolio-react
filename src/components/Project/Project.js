@@ -14,8 +14,13 @@ class Project extends Component {
 	render() {
 		return(
 			<div className="project-container">
-				<h1>{this.name}</h1>
-				<p>{this.desc}</p>
+				<div className="project-header">
+					<h1>{this.name}</h1>
+					<hr />
+				</div>
+				<div className="project-desc">
+					<p>{this.desc}</p>
+				</div>
 			</div>
 		);
 	}

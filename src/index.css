@@ -1,3 +1,10 @@
+:root {
+  /* Variables */
+  --brand-green: #53C9B4;
+  --brand-orange: #C9653E;
+  --font-main: #3E3E3E;
+}
+
 body {
   margin: 0;
   padding: 0;
