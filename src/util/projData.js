@@ -19,9 +19,10 @@ let projData = [
     },
     {
         'id' : 3,
-        'name' : 'Test Project',
-        'type' : ['Test'],
-        'desc' : 'This is a test project!!'
+        'name' : 'This Website!',
+        'type' : ['Website Design', 'Website Development'],
+        'desc' : `This website was built using React to dynamically generate
+                content based on project objects that contained the required data.`
         
     },
     {
@@ -47,4 +48,4 @@ let projData = [
     }
 ]
 
-module.exports = projData;
+export default projData;

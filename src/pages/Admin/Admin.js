@@ -1,23 +1,18 @@
 import React, { Component } from 'react';
-import DataList from '../../util/DataList';
+import DataController from '../../util/DataController';
 
 import './Admin.css';
 
 class Admin extends Component {
 
-    createList() {
-        const dataList = new DataList();
-    }
+    controller = new DataController();
+    
 
     render() {
         return(
-            <div className="admin wrapper">
-                <div className="create">
-                    <h1>Create a list</h1>
-                    <hr />
-                    <p id="output"></p>
-                    <button onClick={this.createList}>Create</button>
-                </div>
+            <div className="wrapper">
+                <h1>Admin Page</h1>
+                <p>Admin stuffs...</p>
             </div>
         );
     }
