@@ -12,7 +12,7 @@ class ProjectList extends Component {
 				name={projectData.name}
 				type={projectData.type}
 				desc={projectData.desc}
-			/>	
+			/>
 		));
 
 		return(

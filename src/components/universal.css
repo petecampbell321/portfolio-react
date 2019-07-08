@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.section-title {
+    text-align: center;
+    font-size: inherit;
+}
+
+a {
+
+}
+a:visited {
+    color: inherit;
+}

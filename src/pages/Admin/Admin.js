@@ -6,7 +6,6 @@ import './Admin.css';
 class Admin extends Component {
 
     controller = new DataController();
-    
 
     render() {
         return(
