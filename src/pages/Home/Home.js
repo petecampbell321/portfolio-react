@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProjectList from '../../components/ProjectList/ProjectList';
+// import ProjectList from '../../components/ProjectList/ProjectList';
 import Landing from '../../components/Landing/Landing';
 import Choice from '../../components/Choice/Choice';
 
@@ -11,7 +11,7 @@ class Home extends Component {
 			<div>
 				<Landing />
 				<Choice />
-				<ProjectList />
+				{/* <ProjectList /> */}
 			</div>
 		);
 	}
