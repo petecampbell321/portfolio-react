@@ -9,7 +9,7 @@ class Admin extends Component {
 
     render() {
         return(
-            <div className="wrapper">
+            <div className="admin-wrapper">
                 <h1>Admin Page</h1>
                 <p>Admin stuffs...</p>
             </div>
