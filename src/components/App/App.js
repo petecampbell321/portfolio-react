@@ -1,6 +1,7 @@
 // Import Statements
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 
 // Pages
 import Home from '../../pages/Home/Home';
@@ -15,14 +16,16 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/admin" component={Admin} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/about" component={About} />
-          </Switch>
-        </div>
+        <ScrollToTop>
+          <div>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/admin" component={Admin} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/about" component={About} />
+            </Switch>
+          </div>
+        </ScrollToTop>
       </Router>
     );
   }

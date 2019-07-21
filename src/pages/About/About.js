@@ -24,9 +24,9 @@ class About extends Component {
                     <h1>Pete Campbell</h1>
                     <h2>Freelance developer</h2>
                     <div className="about-socials">
-                        <a target="_blank" rel="noopener noreferrer" href="mailto:contact@petecampbell.me.uk"><FontAwesomeIcon icon={faEnvelopeSquare} className="icon" /></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/petecamp.design/"><FontAwesomeIcon icon={faFacebookSquare} className="icon" /></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/petecampbell321"><FontAwesomeIcon icon={faGithubSquare} className="icon" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="mailto:contact@petecampbell.me.uk"><FontAwesomeIcon icon={faEnvelopeSquare} className="icon" size="sm" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/petecamp.design/"><FontAwesomeIcon icon={faFacebookSquare} className="icon" size="sm" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/petecampbell321"><FontAwesomeIcon icon={faGithubSquare} className="icon" size="sm" /></a>
                     </div>
                 </div>
                 <div className="about-content">

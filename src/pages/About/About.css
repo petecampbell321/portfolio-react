@@ -17,11 +17,11 @@
     margin-top: 150px;
 }
 .about-sidebar h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
 }
 .about-sidebar h2 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     font-weight: 200;
 }
@@ -44,14 +44,14 @@
     padding-bottom: 150px;
 }
 .about-content h1 {
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 150px;
 }
 .about-content h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 0;
 }
 .about-content p {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 0;
 }
