@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 // CSS
 import '../universal.css';
 import './Landing.css';
 
 // FontAwesomeIcons
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 
 class Landing extends Component {
     render() {
@@ -46,8 +47,10 @@ class Landing extends Component {
                     <p>Hi! I'm <span className="heavy-font">Pete Campbell</span>!</p>
                     <p><span className="green-font heavy-font">Designer</span> & <span className="orange-font heavy-font">Developer</span></p>
                     <p className="small-font">(Of this site and some others)</p>
-                    {/* <a href="#choice"><FontAwesomeIcon icon={faArrowDown} id="arrow" /></a> */}
-                </div>			
+                    <Link to="#choice">
+                        <p className="small-font" id="scroller">Dive deeper <FontAwesomeIcon icon={faSortDown} id="arrow" /></p>
+                    </Link>
+                </div>
             </div>
         );
     }
