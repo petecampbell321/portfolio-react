@@ -28,13 +28,25 @@ class AddForm extends Component
     {
         return(
             <div className="addFormWrapper">
+                <h2>
+                    Add Project
+                </h2>
                 <form onSubmit={this.handleIdChange}>
-                    <h2>
-                        Add Project
-                    </h2>
                     <label>
                         ID:
                         <input type="text" name="id" value={this.state.id} onChange={this.handleIdChange}/>
+                    </label>
+                    <label>
+                        Name:
+                        <input type="text" name="name" value={this.state.name} onChange={this.handleIdChange}/>
+                    </label>
+                    <label>
+                        Type:
+                        <input type="text" name="type" value={this.state.type} onChange={this.handleIdChange}/>
+                    </label>
+                    <label>
+                        Description:
+                        <input type="text" name="description" value={this.state.description} onChange={this.handleIdChange}/>
                     </label>
                     <input type="submit" value="Submit" />
                 </form>

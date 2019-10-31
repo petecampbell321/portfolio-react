@@ -3,6 +3,7 @@ import DataController from '../../util/DataController';
 import AddForm from "../../components/AddForm/AddForm";
 
 import './Admin.css';
+import AdminProjectList from '../../components/AdminProjectList/AdminProjectList';
 
 class Admin extends Component {
 
@@ -16,6 +17,10 @@ class Admin extends Component {
 
                 <div className="add-form">
                     <AddForm />
+                </div>
+
+                <div className="admin-project-view">
+                    <AdminProjectList />
                 </div>
             </div>
         );
