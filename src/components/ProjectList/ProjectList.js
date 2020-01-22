@@ -1,17 +1,33 @@
 import React, { Component } from 'react';
 import Project from '../Project/Project';
-import projData from '../../util/projData';
+//import projData from '../../util/projData';
+
+import DataController from '../../util/DataController';
 
 import './ProjectList.css';
 
 class ProjectList extends Component {
+
+	state = {
+		projects: []
+	}
+
+	getProjects = () => {
+		DataController.getProjects()
+		.then(res => this.setState({ projects: res.projData }))
+		.catch(err => console.log(err));
+	}
+
 	render() {
-		const list = projData.map(projectData => (
+
+		this.getProjects();
+
+		const list = this.state.projects.map(project => (
 			<Project 
-				key={projectData.id}
-				name={projectData.name}
-				type={projectData.type}
-				desc={projectData.desc}
+				key={project.id}
+				name={project.name}
+				type={project.type}
+				desc={project.description}
 			/>
 		));
 

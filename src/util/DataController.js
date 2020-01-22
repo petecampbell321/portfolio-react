@@ -1,32 +1,11 @@
-import projData from './projData';
+import axios from 'axios';
 
-class DataController {
-    constructor() {
-        this.data = projData;
-    }
+const getProjects = () => new Promise((resolve, reject) => {
+    axios.get('https://v2-api.sheety.co/b00788f7b16579e764e16ee3b7badeac/portfolioProjectData/projData')
+        .then((res) => {
+            resolve(res.data);
+        })
+        .catch(err => reject(err));
+});
 
-    getList() {
-        for (let i = 0; i < this.data.length; i++) {
-            
-        }
-    }
-
-    // // ID Getter & Setter
-    // get Id() {
-    //     return this.id;
-    // }
-    // set Id(value) {
-    //     this.id = value;
-    // }
-
-    // // Name Getter & Setter
-    // get Name() {
-    //     return this.name;
-    // }
-    // set Name(value) {
-    //     this.name = value;
-    // }
-    
-}
-
-export default DataController;
+export default { getProjects };
