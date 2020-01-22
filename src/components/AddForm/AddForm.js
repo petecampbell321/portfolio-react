@@ -8,7 +8,12 @@ class AddForm extends Component
     {
         super(props);
 
-        this.state = {id: "", name: "", type: "", desc: ""}
+        this.state = {
+            id: "", 
+            name: "", 
+            type: "", 
+            desc: ""
+        }
 
         this.handleIdChange = this.handleIdChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
