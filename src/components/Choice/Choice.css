@@ -43,6 +43,8 @@
 #choice h3 {
     font-size: 30px;
     display: block;
+    margin: 0;
+    padding-top: 20px;
     /* position: relative;
     top: -40%;
     opacity: 0; */
@@ -52,3 +54,31 @@
     top: 0%;
     opacity: 1;
 } */
+
+
+@media only screen and (max-width: 500px) {
+    .choice-container {
+        position: relative;
+    }
+    
+    .option-container {
+        height: 80%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .option {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    *:hover {
+        background-color: inherit;
+    }
+
+    #choice h2 {
+        font-size: 40px;
+        padding-top: 0;
+    }
+}
