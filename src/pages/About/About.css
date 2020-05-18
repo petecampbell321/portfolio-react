@@ -1,6 +1,6 @@
 .about {
     display: grid;
-    grid: 'sidebar content content';
+    grid-template-areas: 'sidebar content content';
     grid-auto-columns: 25%;
 }
 
@@ -54,4 +54,57 @@
 .about-content p {
     font-size: 25px;
     margin-top: 0;
+}
+
+#scroller {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #scroller {
+        display: initial;
+    }
+    .about {
+        display: grid;
+        grid-template-areas: "sidebar"
+                             "content";
+        grid-auto-columns: 100%;
+    }
+    .about-sidebar {
+        grid-area: sidebar;
+        height: 100vh;
+        width: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+        position: initial;
+    }
+    .about-sidebar img {
+        margin-top: 1rem;
+    }
+    .about-socials {
+        position: static;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .about-sidebar .about-socials .icon {
+        margin-bottom: 0px;
+    }
+    .about-content {
+        grid-area: content;
+        margin-left: 0px;
+        padding-bottom: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .about-content h1 {
+        /* text-align: center; */
+        padding-top: 0px;
+    }
+    .about-content p {
+        font-size: 1.25rem;
+    }
 }

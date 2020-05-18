@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 // CSS
 import './About.css'
@@ -8,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 
 // Images
 import ProfileImg from '../../img/profile.JPG';
@@ -28,8 +30,11 @@ class About extends Component {
                         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/petecamp.design/"><FontAwesomeIcon icon={faFacebookSquare} className="icon" size="sm" /></a>
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/petecampbell321"><FontAwesomeIcon icon={faGithubSquare} className="icon" size="sm" /></a>
                     </div>
+                    <Link to="#about-content">
+                        <p className="small-font" id="scroller">More Detail <FontAwesomeIcon icon={faSortDown} id="arrow" /></p>
+                    </Link>
                 </div>
-                <div className="about-content">
+                <div className="about-content" id="about-content">
                     <div className="about-profile">
                         <h1>Profile</h1>
                         <h2>Personal Info:</h2>
