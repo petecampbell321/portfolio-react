@@ -7,8 +7,8 @@ html {
     font-size: inherit;
 }
 
-a {
-
+a:link {
+    color: inherit;
 }
 a:visited {
     color: inherit;
