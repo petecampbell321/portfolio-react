@@ -56,12 +56,12 @@
     margin-top: 0;
 }
 
-#scroller {
+.about #scroller {
     display: none;
 }
 
 @media only screen and (max-width: 700px) {
-    #scroller {
+    .about #scroller {
         display: initial;
     }
     .about {
