@@ -15,7 +15,7 @@ class Project extends Component {
 		return(
 			<div className="project-container">
 				<div className="project-header">
-					<h1>{this.name}</h1>
+					<h2>{this.name}</h2>
 					<hr />
 				</div>
 				<div className="project-desc">

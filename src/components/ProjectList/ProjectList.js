@@ -32,11 +32,8 @@ class ProjectList extends Component {
 		));
 
 		return(
-			<div className="container">
-				<h1 className="section-title">My Projects</h1>
-				<div className="list-container">
-					{list}
-				</div>
+			<div className="list-container">
+				{list}
 			</div>
 		)
 	}
