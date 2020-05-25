@@ -1,0 +1,17 @@
+.project-header {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+.project-header h2 {
+    
+}
+.vert-align {
+    top: 50%;
+}
+.plusIcon {
+    margin: auto 10% auto 10%;
+}
+
+#seperator {
+    display: none;
+}
