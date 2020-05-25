@@ -1,15 +1,12 @@
 .project-header {
     display: inline-grid;
-    grid-template-columns: auto auto;
-}
-.project-header h2 {
-    
+    grid-template-columns: auto 25%;
 }
 .vert-align {
-    top: 50%;
+    display: flex;
 }
 .plusIcon {
-    margin: auto 10% auto 10%;
+    margin: auto;
 }
 
 #seperator {
